@@ -14,5 +14,6 @@ Breifly breaking these down into smaller chunks, I can se that the below will be
   <li> the square colour will need to be using a value of color, and this will need to be selected by some sort of list or selector </li> 
   <li> an erase function to reset the sqaures back to white </li> 
   <li> I will need to have a reset button</li> 
+ </ol>
   
   These are my intiial thoughts, no doubt these will break down even further again. 
