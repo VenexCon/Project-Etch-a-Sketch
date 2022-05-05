@@ -1,10 +1,22 @@
-JavaScript initial Code 
+CSS 
 
-.mainGrid {
+.parent {
 display: grid;
 grid-template-columns: repeat(16, 1fr);
 grid-template-rows: repeat(16, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+grid-column-gap: 2px;
+grid-row-gap: 2px;
+background-color: grey; 
+width: auto-fit;
+max-width: 50%;
+height: 200px; 
+margin: 0 auto; 
+}
+
+div {
+  border-style: solid;
+    Border-color: black;
+  width: 1fr; 
+  height: 1fr;
 }
 
