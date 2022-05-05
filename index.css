@@ -1,22 +1,27 @@
-CSS 
 
-.mainGrid {
-display: grid;
-grid-template-columns: repeat(16, 1fr);
-grid-template-rows: repeat(16, 1fr);
-grid-column-gap: 2px;
-grid-row-gap: 2px;
-background-color: grey; 
-width: auto-fit;
-max-width: 50%;
-height: 200px; 
-margin: 0 auto; 
+:root {
+--grid-rows: 1; 
+--grid-cols:1; 
 }
 
-div {
-  border-style: solid;
-    Border-color: black;
-  width: 1fr; 
-  height: 1fr;
+/* Flex Wrapper */ 
+.wrapper { 
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+/* Main 16 x 16 grid */ 
+
+.mainGrid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 
