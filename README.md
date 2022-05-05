@@ -20,3 +20,9 @@ Breifly breaking these down into smaller chunks, I can se that the below will be
  </ol>
   
   These are my intiial thoughts, no doubt these will break down even further again. 
+  
+  <hr> 
+  
+  Thoughts : 05/05/22 
+  
+ I have began the project with a badsic 16 X 16 div, but the crux is how i get the cells to be so wide and high, without haviny anything in the grid itself? I may be over thinking this but i have it so that with 16 divs, itt currently fills the top 16 rows. But, i don't fancy doing over 100 divs as this seems highly unpractical. IT seems as though i am missing something but CSS tricks has not yet englightened me so this will take some googling. 
