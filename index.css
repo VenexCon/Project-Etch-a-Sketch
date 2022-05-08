@@ -1,22 +1,39 @@
 
 :root {
---grid-rows: 1; 
---grid-cols:1; 
+  --grid-cols: 1;
+  --grid-rows: 1;
 }
 
-/* Flex Wrapper */ 
-.wrapper { 
+
+* {
+  box-sizing: border-box;
+}
+
+.toggleBar{
+ 
+}
+
+.wrapper{
   display: flex; 
   flex-wrap: wrap; 
+  margin: auto; 
+  justify-content: space-evenly; 
 }
 
-/* Main 16 x 16 grid */ 
+h1 {
+  display: block;
+  margin: 0 auto; 
+  padding: 1em; 
+  text-align: center; 
+}
 
-.mainGrid {
+#container {
   display: grid;
   grid-gap: 1em;
-  grid-template-rows: repeat(var(--grid-rows), 1fr);
-  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  align-self: center; 
+  grid-template-rows: repeat(var(--grid-rows), 1em);
+  grid-template-columns: repeat(var(--grid-cols), 1em);
+ 
 }
 
 .grid-item {
@@ -24,4 +41,3 @@
   border: 1px solid #ddd;
   text-align: center;
 }
-
