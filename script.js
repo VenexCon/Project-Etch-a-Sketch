@@ -11,7 +11,6 @@ const gridSizeSelector50 = document.getElementById(`grid-size-selector50`)
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-cols', cols);
-
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
     cell.classes = ['grid-item'];
@@ -36,7 +35,7 @@ document.addEventListener('mouseover',function(e){
    }
 });
 
-
+// redefines grid-size. 
 gridSizeSelector50.addEventListener(`click`, () => {
   makeRows(50, 50);
-})
+});

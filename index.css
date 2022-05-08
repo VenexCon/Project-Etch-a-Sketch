@@ -35,19 +35,22 @@ h1 {
 
 #container {
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 1em; 
   align-self: center; 
   grid-template-rows: repeat(var(--grid-rows), 1em);
   grid-template-columns: repeat(var(--grid-cols), 1em);
   margin: 2em; 
-  max-width: 
+  width:500px;
+  height: 500px;
  
 }
 
 .grid-item {
   padding: 1em;
+  margin: 0;
   border: 0.15em solid #ddd;
   text-align: center;
+  flex: 1 1 auto;
 }
 
 
