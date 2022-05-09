@@ -3,11 +3,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --grid-cols:1 ;
-  --grid-rows:1;
-}
-
 
 /* Wrapper for entire content, flexBox */ 
 .wrapper{

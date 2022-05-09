@@ -1,16 +1,13 @@
+const container = document.getElementById(`container`);
+const gridItems = document.querySelectorAll(`.grid-item`);
+let selectedColor = 
 
-// calls function to make a default grid on page load. 
-window.onload = function () {
-  makeRows(20, 20); 
-}
+
 
 // uses a loop to create the required divs
-function makeRows(rows, cols) {
-
-  container.style.setProperty('--grid-rows', rows);
-  container.style.setProperty('--grid-cols', cols);
-
-  for (c = 0; c < (rows * cols); c++) {
+function createGrid(rows, cols) {
+  const rowNum = (rows * cols); 
+  for (c = 0; c < rowNum; c++) {
     let cell = document.createElement("div");
     cell.classes = ['grid-item'];
     container.appendChild(cell).className = "grid-item";
@@ -21,41 +18,45 @@ function makeRows(rows, cols) {
 // Drawing declarations 
 let drawing = false; 
 
-document.addEventListener('mousedown', () => {
-  drawing = true; 
-}); 
+    document.addEventListener('mousedown', () => {
+      drawing = true; 
+    }); 
+    document.addEventListener('mouseup', () => {
+      drawing = false; 
+    });
 
-document.addEventListener('mouseup', () => {
-  drawing = false; 
-});
-
-
-// test function for mouseover events 
+    
 function changeGridColor (e) {
-  e.style.backgroundColor="red"; 
+  e.style.backgroundColor="#ff0000"; 
 }; 
 
 // This block targets the whole DOM and identifies the divs with the grid-item class
 document.addEventListener('mouseover',function(e){
   //console.log(e.target.classes);
-  if(e.target && e.target.classList.contains('grid-item')){
-    // Nested If statement confirms drawing boolean
-      if (drawing == true){
-        changeGridColor(e.target);}
+  if(e.target && e.target.classList.contains('grid-item') && (drawing == true)){
+    changeGridColor(e.target);
    } else return ;
 });
 
-let colorSelector = document.querySelector(`input[name="color-selector"]`)
-colorSelector.addEventListener(`input`, function (){
-  console.log("colorChanged"); 
-  let selectedColor = colorSelector.value; 
-  console.log(selectedColor);
 
-})
-  
+let colorSelector = document.querySelector(`input[name="color-selector"]`)
+    colorSelector.addEventListener(`input`, function (){ 
+    let selectedColor = colorSelector.value;
+    let cell = container.children;
+    for (let i = 0; i < gridItems; i++){
+
+    }
+
+
+
+    });
+
+
 
 
 
 let gridSizeSelector = document.getElementById('grid-size-selector');
 
+
+window.onload = function () {createGrid(20, 20);}
 
