@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>EtchaSketch</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="index.css">
 <style>
@@ -11,6 +11,8 @@
 
   <h1> Grid aye? </h1> 
 
+
+  <!--Contains the side bar with selectors-->
   <div class="wrapper">
   
     <aside class ="toggleBar"> This is where the switches will go
@@ -19,20 +21,23 @@
         <label for="color-selector">Select:</label>
         <input type="color" name="color-selector" id="color-selector">
       </div>
+
+      <div>
+        <label for="grid-size-selector">Grid Size:</label>
+        <input type="range" name="grid-size-selector" id="grid-size-selector">
+      </div>
+
+      <div>
+        <h3>Why not try drawing a:</h3>
+        <p id="random-drawing"><strong>PIG?</strong></p>
+      </div>
+
+      
       
     </aside> 
 
-
-
-
     <!-- This where the grids are created, using psuedo classes in CSS. -->
     <div id="container"></div>
-
-    
-  
-  
-    
-
 
   </div> 
 

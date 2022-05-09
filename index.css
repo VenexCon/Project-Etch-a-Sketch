@@ -63,6 +63,10 @@ h1 {
 
 #color-selector {
   position: relative;
-  margin: auto;
+  margin: 2em auto;
+}
 
+#grid-size-selector {
+  position: relative;
+  margin: 2em auto;
 }

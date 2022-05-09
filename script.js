@@ -1,4 +1,5 @@
-
+let colorSelector = document.getElementById('color-selector'); 
+let gridSizeSelector = document.getElementById('grid-size-selector');
 
 
 
