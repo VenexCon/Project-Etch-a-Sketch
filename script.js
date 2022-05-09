@@ -9,9 +9,6 @@ const gridSizeSelector50 = document.getElementById(`grid-size-selector50`)
 
 // uses a loop to create the required divs
 function makeRows(rows, cols) {
-      let rows = 500/rownum; 
-      let cols = 500/rownum; 
-      
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-cols', cols);
 
