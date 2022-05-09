@@ -1,5 +1,5 @@
 
-const gridSizeSelector50 = document.getElementById(`grid-size-selector50`)
+const gridSizeSelector50 = document.getElementById(`grid-size-selector40`)
 
 
 
@@ -22,19 +22,17 @@ function makeRows(rows, cols) {
   };
 };
 
-// Drawing function 
 
+// Drawing function 
 let drawing = false; 
 
-    document.addEventListener('mousedown', () => {
-      console.log("down");
-      drawing = true; 
-    }); 
+document.addEventListener('mousedown', () => {
+  drawing = true; 
+}); 
 
-    document.addEventListener('mouseup', () => {
-      console.log("up"); 
-      drawing = false; 
-    });
+document.addEventListener('mouseup', () => {
+  drawing = false; 
+});
 
 
 // test function for mouseover events 
@@ -44,13 +42,15 @@ function changeGridColor (e) {
 
 // This block targets the whole DOM and identifies the divs with the grid-item class
 document.addEventListener('mouseover',function(e){
-  console.log(e.target.classes);
-  if(e.target && e.target.classes.contains('grid-item')){
-        changeGridColor(e.target);
-   }
+  //console.log(e.target.classes);
+  if(e.target && e.target.classList.contains('grid-item')){
+    // Nested If statement confirms drawing boolean
+      if (drawing == true){
+        changeGridColor(e.target);}
+   } else return ;
 });
 
 // redefines grid-size. 
-gridSizeSelector50.addEventListener(`click`, () => {
+gridSizeSelector40.addEventListener(`click`, () => {
   makeRows(40, 40);
 });
