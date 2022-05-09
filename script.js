@@ -1,5 +1,5 @@
 
-const gridSizeSelector50 = document.getElementById(`grid-size-selector40`)
+
 
 
 
@@ -17,7 +17,6 @@ function makeRows(rows, cols) {
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
     cell.classes = ['grid-item'];
-    cell.style.setProperty('background-color', 'white');
     container.appendChild(cell).className = "grid-item";
   };
 };
@@ -50,7 +49,3 @@ document.addEventListener('mouseover',function(e){
    } else return ;
 });
 
-// redefines grid-size. 
-gridSizeSelector40.addEventListener(`click`, () => {
-  makeRows(40, 40);
-});
