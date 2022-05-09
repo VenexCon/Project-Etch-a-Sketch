@@ -9,11 +9,6 @@
 }
 
 
-* {
-  box-sizing: border-box;
-}
-
-
 /* Wrapper for entire content, flexBox */ 
 .wrapper{
   display: flex; 
@@ -40,8 +35,6 @@ h1 {
   grid-template-rows: repeat(var(--grid-rows), 1em);
   grid-template-columns: repeat(var(--grid-cols), 1em);
   margin: 2em; 
-  width:500px;
-  height: 500px;
  
 }
 
