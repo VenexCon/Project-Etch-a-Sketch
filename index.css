@@ -4,13 +4,8 @@
 }
 
 :root {
-  --grid-cols: ;
-  --grid-rows: ;
-}
-
-
-* {
-  box-sizing: border-box;
+  --grid-cols:1 ;
+  --grid-rows: 1;
 }
 
 
@@ -33,18 +28,16 @@ h1 {
 
 #container {
   display: grid;
-  grid-gap: 1em; 
-  align-self: center; 
+  
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
   margin: 2em; 
-  width: 400px; 
-  height: 400px;
+  width:580px; 
+  height:580px; 
+  overflow: hidden;
 }
 
 .grid-item {
-  display:flex;
-  padding: 1em;
   margin: 0;
   border: 1px solid #ddd;
   text-align: center;
