@@ -4,8 +4,13 @@
 }
 
 :root {
-  --grid-cols: 1;
-  --grid-rows: 1;
+  --grid-cols: ;
+  --grid-rows: ;
+}
+
+
+* {
+  box-sizing: border-box;
 }
 
 
@@ -16,8 +21,6 @@
   margin: auto; 
   justify-content: space-evenly; 
 }
-
-
 
 h1 {
   display: block;
