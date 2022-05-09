@@ -1,8 +1,3 @@
-let colorSelector = document.getElementById('color-selector'); 
-let gridSizeSelector = document.getElementById('grid-size-selector');
-
-
-
 
 // calls function to make a default grid on page load. 
 window.onload = function () {
@@ -23,7 +18,7 @@ function makeRows(rows, cols) {
 };
 
 
-// Drawing function 
+// Drawing declarations 
 let drawing = false; 
 
 document.addEventListener('mousedown', () => {
@@ -49,4 +44,18 @@ document.addEventListener('mouseover',function(e){
         changeGridColor(e.target);}
    } else return ;
 });
+
+let colorSelector = document.querySelector(`input[name="color-selector"]`)
+colorSelector.addEventListener(`input`, function (){
+  console.log("colorChanged"); 
+  let selectedColor = colorSelector.value; 
+  console.log(selectedColor);
+
+})
+  
+
+
+
+let gridSizeSelector = document.getElementById('grid-size-selector');
+
 
