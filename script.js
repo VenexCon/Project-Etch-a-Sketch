@@ -21,7 +21,7 @@ let gridSizeSelector = document.getElementById('grid-size-selector');
 
 
 
-uses a loop to create the required divs
+/* uses a loop to create the required divs
 function createGrid(rows, cols) {
  const rowNum = (rows * cols); 
   for (c = 0; c < rowNum; c++) {
@@ -31,7 +31,7 @@ function createGrid(rows, cols) {
       //console.log("click");});
     container.appendChild(cell).className = "grid-item";
   };
-};
+}; */
 
 
 // Drawing declarations 
@@ -61,10 +61,7 @@ document.addEventListener('mouseover',function(e){
 let colorSelector = document.querySelector(`input[name="color-selector"]`)
     colorSelector.addEventListener(`input`, function (){ 
     let selectedColor = colorSelector.value;
-    let cell = container.children;
-    for (let i = 0; i < gridItems; i++){
-
-    }
+    console.log(selectedColor);
 });
 
 
