@@ -1,39 +1,22 @@
-makeRows(16, 16);
+createGrid(16, 16);
 
 const container = document.getElementById(`container`);
 const gridItems = document.querySelectorAll(`.grid-item`);
+let gridSizeSelector = document.getElementById('grid-size-selector');
 
 
 
-function makeRows(rows, cols) {
-  for (c = 0; c < (rows * cols); c++) {
+uses a loop to create the required divs
+function createGrid(rows, cols) {
+ const rowNum = (rows * cols); 
+  for (c = 0; c < rowNum; c++) {
     let cell = document.createElement("div");
-    cell.addEventListener(`click`, () => {
-      console.log("click");
-    })
-    //cell.innerText = (c + 1);
+    cell.classes = ['grid-item'];
+    //cell.addEventListener(`click`, () => {
+      //console.log("click");});
     container.appendChild(cell).className = "grid-item";
   };
 };
-
-
-
-
-
-
-
-
-// uses a loop to create the required divs
-//function createGrid(rows, cols) {
-  //const rowNum = (rows * cols); 
- // for (c = 0; c < rowNum; c++) {
-    //let cell = document.createElement("div");
-    //cell.classes = ['grid-item'];
-    //cell.addEventListener(`click`, () => {
-     // console.log("click");});
-    //container.appendChild(cell).className = "grid-item";
- // };
-//};
 
 
 // Drawing declarations 
@@ -67,16 +50,6 @@ let colorSelector = document.querySelector(`input[name="color-selector"]`)
     for (let i = 0; i < gridItems; i++){
 
     }
-
-
-
-    });
-
-
-
-
-
-let gridSizeSelector = document.getElementById('grid-size-selector');
-
+});
 
 
