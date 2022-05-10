@@ -1,8 +1,23 @@
+
+function createGrid(rows, cols) {
+ const container = document.getElementById(`container`);
+ const rowNum = (rows * cols); 
+  for (c = 0; c < rowNum; c++) {
+    let cell = document.createElement("div");
+    cell.classes = ['grid-item'];
+    cell.addEventListener(`click`, () => {
+      console.log("click");});
+    container.appendChild(cell).className = "grid-item";
+  };
+};
+
 createGrid(16, 16);
 
-const container = document.getElementById(`container`);
+
 const gridItems = document.querySelectorAll(`.grid-item`);
 let gridSizeSelector = document.getElementById('grid-size-selector');
+
+
 
 
 
