@@ -60,5 +60,5 @@ let colorSelector = document.querySelector(`input[name="color-selector"]`)
 let gridSizeSelector = document.getElementById('grid-size-selector');
 
 
-window.onload = function () {createGrid(20, 20);}
+createGrid(20, 20);
 
