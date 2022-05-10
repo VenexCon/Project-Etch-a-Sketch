@@ -10,6 +10,8 @@ function createGrid(rows, cols) {
   for (c = 0; c < rowNum; c++) {
     let cell = document.createElement("div");
     cell.classes = ['grid-item'];
+    cell.addEventListener(`click`, () => {
+      console.log("click");});
     container.appendChild(cell).className = "grid-item";
   };
 };
