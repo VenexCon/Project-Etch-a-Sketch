@@ -1,5 +1,9 @@
 const container = document.getElementById(`container`);
 const eraserBtn = document.getElementById(`eraser-btn`);
+const randomDrawing = ["Pig", "rat", "policeman", "cup", "phone", "keyboard", "plane", "wand", "The Mona Lisa?"];
+
+
+
 let colorSelector = document.querySelector(`input[name="color-selector"]`);
 let color;
 
@@ -49,8 +53,10 @@ eraserBtn.addEventListener(`click`, function (){
 })
     
 
-
-
-
-
-
+window.onload = function () {
+  let item = randomDrawing[Math.floor(Math.random()*randomDrawing.length)];
+  console.log(item)
+  console.log(typeof(item))
+  const drawingSuggestion = document.getElementById(`random-drawing`); 
+  return drawingSuggestion.innerHTML = item
+};
