@@ -24,12 +24,17 @@
 
       <div>
         <label for="grid-size-selector">Grid Size:</label>
-        <input type="range" name="grid-size-selector" id="grid-size-selector">
+        <input type="range" name="grid-size-selector" id="grid-size-selector" min="10" max="64">
       </div>
 
       <div> 
         <input type="button" name="eraser" id="eraser-btn" value="Eraser">
       </div>
+
+      <div>
+        <input type="button" name="reset" id="resetbtn" value="Reset Grid">
+      </div>
+
 
       <div>
         <h3>Why not try drawing a:</h3>
@@ -39,6 +44,7 @@
       
       
     </aside> 
+
 
     <!-- Grid-item container-->
     <div id="container"></div>

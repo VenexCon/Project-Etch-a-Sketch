@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 
 *{
   box-sizing: border-box;
 }
+
+body {
+  background-color: #5C2686;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
 
 
 /* Wrapper for entire content, flexBox */ 
@@ -24,14 +33,11 @@ h1 {
 #container{
   margin-top: 50px;
   display: inline-grid;
-  grid-template-columns: repeat(16, 2fr);
-  grid-template-rows: repeat(16, 2fr);
-  border: 5px solid white;
+  border: 5px solid goldenrod;
   border-radius: 5px;
   height: 575px;
   width: 575px;
   background-color: gray;
-  box-shadow: 10px 10px;
 }
 
 .grid-item {
