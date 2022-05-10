@@ -1,5 +1,7 @@
 const container = document.getElementById(`container`);
-const eraserBtn = document.getElementById(`eraser-btn`)
+const eraserBtn = document.getElementById(`eraser-btn`);
+let colorSelector = document.querySelector(`input[name="color-selector"]`);
+let color;
 
 // CreateGrids and appends it to container
 function createGrid(rows, cols) {
@@ -14,9 +16,8 @@ function createGrid(rows, cols) {
 
 createGrid(16, 16);
 
-
+// grabs grid-items
 const gridItems = document.querySelectorAll(`.grid-item`);
-let gridSizeSelector = document.getElementById('grid-size-selector');
 
 // Drawing Function. 
 container.addEventListener(`mouseover`, function (e){
@@ -43,12 +44,9 @@ function changeGridColor (e) {
   e.style.backgroundColor= colorSelector.value; 
 }; 
 
-
-
-eraserBtn.addEventListener(`click`, function () {
-  console.log("eraser clicked"); 
-}
-);
+eraserBtn.addEventListener(`click`, function (){
+  colorSelector.value = "#FFFFFF";
+})
     
 
 
