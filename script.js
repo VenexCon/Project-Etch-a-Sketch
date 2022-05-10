@@ -52,12 +52,12 @@ function changeGridColor (e) {
 }; 
 
 // This block targets the whole DOM and identifies the divs with the grid-item class
-document.addEventListener('mouseover',function(e){
+/* document.addEventListener('mouseover',function(e){
   //console.log(e.target.classes);
   if(e.target && e.target.classList.contains('grid-item') && (drawing == true)){
     changeGridColor(e.target);
    } else return ;
-});
+}); */
 
 
 
