@@ -46,7 +46,9 @@ let drawing = false;
 
     
 function changeGridColor (e) {
-  e.style.backgroundColor="#ff0000"; 
+   if(e.target && e.target.classList.contains('grid-item') && (drawing == true)){
+    e.style.backgroundColor="#ff0000"
+   } else return ""; 
 }; 
 
 // This block targets the whole DOM and identifies the divs with the grid-item class
@@ -58,6 +60,8 @@ document.addEventListener('mouseover',function(e){
 });
 
 
+
+// Color Selection Function
 let colorSelector = document.querySelector(`input[name="color-selector"]`)
     colorSelector.addEventListener(`input`, function (){ 
     let selectedColor = colorSelector.value;
