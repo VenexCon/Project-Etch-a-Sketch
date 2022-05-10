@@ -1,5 +1,5 @@
 const container = document.getElementById(`container`);
-
+const eraserBtn = document.getElementById(`eraser-btn`)
 
 // CreateGrids and appends it to container
 function createGrid(rows, cols) {
@@ -45,6 +45,10 @@ function changeGridColor (e) {
 
 
 
+eraserBtn.addEventListener(`click`, function () {
+  console.log("eraser clicked"); 
+}
+);
     
 
 
