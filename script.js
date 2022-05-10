@@ -1,7 +1,7 @@
 const container = document.getElementById(`container`);
 
 
-
+// CreateGrids and appends it to container
 function createGrid(rows, cols) {
  const container = document.getElementById(`container`);
  const rowNum = (rows * cols); 
@@ -18,7 +18,7 @@ createGrid(16, 16);
 const gridItems = document.querySelectorAll(`.grid-item`);
 let gridSizeSelector = document.getElementById('grid-size-selector');
 
-
+// Drawing Function. 
 container.addEventListener(`mouseover`, function (e){
   if(e.target && e.target.classList.contains('grid-item') &&  (drawing == true)){
     changeGridColor(e.target);
@@ -36,17 +36,16 @@ let drawing = false;
       drawing = false; 
     });
 
-    
+
+// Changes drawing color
 function changeGridColor (e) {
+  let colorSelector = document.querySelector(`input[name="color-selector"]`)
   e.style.backgroundColor= colorSelector.value; 
 }; 
 
 
-let colorSelector = document.querySelector(`input[name="color-selector"]`)
-    colorSelector.addEventListener(`input`, function (){ 
-    let selectedColor = colorSelector.value;
-    console.log(selectedColor);
-});
+
+    
 
 
 
