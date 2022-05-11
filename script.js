@@ -49,9 +49,11 @@ gridSizeSelector.addEventListener(`input`, () => {
 
 
 // Reset grid to clear any color 
-resetBtn.addEventListener(`click`, function (){
-  let gridItems = container.querySelectorAll(`grid-items`);
-  gridItems.forEach((gridItems) => gridItems.backgroundColor = "white");
+resetBtn.addEventListener(`click`, () => {
+ let newSize = gridSizeSelector.value; 
+ console.log("grid Cleared"); 
+  gridReset ()
+  createGrid(newSize, newSize); 
 });
 
 
