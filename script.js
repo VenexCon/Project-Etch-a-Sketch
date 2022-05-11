@@ -85,7 +85,7 @@ function changeGridColor (e) {
 
 
 // resets color input to white. 
-eraserBtn.addEventListener(`click`, function (){
+eraserBtn.addEventListener(`click`, function eraseColor (){
   colorSelector.value = "#FFFFFF";
 })
     
