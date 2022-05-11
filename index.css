@@ -55,7 +55,7 @@ h1 {
   display: flex;
   flex-direction: column;
   border-style: dashed;
-  border-color: black;
+  border-color: goldenrod;
   border-radius: 2em;
   width: auto;
   padding: 2em; 
