@@ -3,11 +3,10 @@ const eraserBtn = document.getElementById(`eraser-btn`);
 const resetBtn = document.getElementById("resetbtn");
 const gridSizeSelector = document.getElementById(`grid-size-selector`); 
 const randomDrawing = ["Pig", "rat", "policeman", "cup", "phone", "keyboard", "plane", "wand", "The Mona Lisa?"];
-
-
-
 let colorSelector = document.querySelector(`input[name="color-selector"]`);
-let color;
+
+
+
 
 // CreateGrids and appends it to container
 function createGrid(rows, cols) {
@@ -62,8 +61,7 @@ container.addEventListener(`mouseover`, function (e){
   if(e.target && e.target.classList.contains('grid-item') &&  (drawing == true)){
     changeGridColor(e.target);
   } else return ""; 
-})
-
+});
 
 // Drawing declarations 
 let drawing = false; 
@@ -76,8 +74,6 @@ let drawing = false;
     });
 
 
-
-
 // Changes drawing color
 function changeGridColor (e) {
   let colorSelector = document.querySelector(`input[name="color-selector"]`)
@@ -85,13 +81,11 @@ function changeGridColor (e) {
 }; 
 
 
-
 // resets color input to white. 
 eraserBtn.addEventListener(`click`, function eraseColor (){
   colorSelector.value = "#FFFFFF";
 })
     
-
 
 // obtains random innerhtml from declared array. 
 window.onload = function () {
