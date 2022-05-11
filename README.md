@@ -8,7 +8,7 @@
 
 <hr>
 
-<a href ="https://venexcon.github.io/Project-Etch-a-Sketch/" target="_blank";><h4> Link here for current live version</p></a>
+<a href ="https://venexcon.github.io/Project-Etch-a-Sketch/" target="_blank"><h4> Link here for current live version</p></a>
 
 <hr> 
 
