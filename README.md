@@ -24,8 +24,8 @@
 
   <hr> 
   <h3> Outstanding issues <h3> 
-  <ol>
+  <ol><p>
     <li>Eraser turns the color selctor to white, need to ammend this to remove the class, not overwrite it </li> 
-    <li>The color selector looks too robotoic, I need to look int ocustom selectors </ol>
+    <li>The color selector looks too robotoic, I need to look int ocustom selectors </li>
     <li>The grid container and the aside, do not currently sit flush, and it's irritating me slightly..... </li> 
-  </ol>
+    </p></ol>
