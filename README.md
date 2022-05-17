@@ -6,6 +6,8 @@
 
 <p> This is my submisison for The Odin Projects Etch-a-Sketch task. This project took around 4-5 days to complete and involved many stressful nights! The website relies upon javaScript event listeners to detail grid size and color. The grid is created dynamically by a for loop, with various functions to control properties and values. </p> 
 
+![Image of the home screen](/imgs/Screenshot.jpg)
+
 <hr>
 
 <a href ="https://venexcon.github.io/Project-Etch-a-Sketch/" target="_blank"><h4> Link here for current live version</p></a>
